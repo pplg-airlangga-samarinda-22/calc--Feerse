@@ -79,6 +79,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if (isset($_POST['isNum1InputResult'])) {
     $num1 = $result;
+?>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var checkbox = document.getElementById('isNum1InputResult');
+        if (checkbox) {
+          checkbox.checked = true;
+        }
+      });
+    </script>
+<?php
   } else {
     $num1 = '';
   }
